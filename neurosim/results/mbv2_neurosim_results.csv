@@ -1,0 +1,5 @@
+precision,depthwise_mapping,chip_area_mm2,cim_array_area_mm2,latency_us,dynamic_energy_uJ,fps,weight_cells
+INT8,dense,250.115,74.746,195.796,46.849,5107.4,341989120
+INT8,depth1,80.272,23.163,116.574,6.961,8578.2,17620480
+INT4,dense,128.852,41.494,131.064,12.616,7629.9,170994560
+INT4,depth1,45.137,13.784,102.157,2.086,9788.9,8810240
