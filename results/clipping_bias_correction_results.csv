@@ -1,0 +1,9 @@
+Model,Config,Scale,Accuracy (%),Accuracy with bias correction (%),Bias-correction gain (pts)
+Shared (ours),Uniform W4,Max scale,17.58,77.22,59.64
+Shared (ours),Uniform W4,MSE clip,20.86,74.49,53.629999999999995
+Shared (ours),Top-10,Max scale,79.88,87.42,7.540000000000006
+Shared (ours),Top-10,MSE clip,60.85,87.16,26.309999999999995
+Shared (ours),Blocks 0-2 at W8,Max scale,65.93,85.95,20.019999999999996
+Shared (ours),Blocks 0-2 at W8,MSE clip,46.82,86.14,39.32
+Hub (chenyaofo),Uniform W4,Max scale,92.84,93.06,0.21999999999999886
+Hub (chenyaofo),Uniform W4,MSE clip,91.8,93.21,1.4099999999999966

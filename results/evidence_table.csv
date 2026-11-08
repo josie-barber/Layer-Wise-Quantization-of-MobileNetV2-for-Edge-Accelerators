@@ -1,0 +1,10 @@
+Hypothesis,Test,Key result,Suggested reading
+Weight outliers set too coarse a 4-bit step,MSE-optimal clipping (C2.5),Uniform W4 17.58% -> 20.86% with MSE clip (+3.28 pts),weakened
+Damage is a systematic per-channel offset (smooth upsampled input),Bias correction (C2.5),Uniform W4 17.58% -> 77.22% with bias correction (+59.64 pts),supported
+Early layers alone cause the collapse,W4 in one region only (C2.3),W4 only in blocks 0-3: 18.00%; W4 only in blocks 4-19: 70.10%,supported
+Error compounds through the early blocks,"Isolated vs cumulative SQNR (C1.4, C2.4)","Mean compounding in blocks 1-3: ours 5.61 dB, hub 3.88 dB",compare: similar values mean compounding is not specific to our model
+ReLU6 saturation in early layers,Fraction of inputs at the cap of 6 (C3.1),"Blocks 0-3 mean: ours 1.436%, hub 0.000%",check magnitude: matters most for A8 (see C3.2)
+Collapse is reproducible with another training seed,Retrain variant res64_seed1 (C3.4),not run yet,untested (run retrain_variants.py)
+Input resolution (64x64 upsampled vs native 32x32),Retrain variant res32 (C3.4),not run yet,untested (run retrain_variants.py)
+Resolution + hub-like strides,Retrain variant res32_cifar_strides (C3.4),not run yet,untested (run retrain_variants.py)
+Whole-block protection beats layer-wise top-k,"Matched-storage comparison (C2.2 without, C3.2 with bias correction)",Without bias correction: blocks win 3 of 8 pairs (range -9.49 to +4.60 pts). With bias correction at A8: blocks win 6 of 7 near-equal-storage pairs (mean +3.31 pts),mixed: depends on bias correction and budget

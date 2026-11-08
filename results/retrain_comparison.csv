@@ -1,0 +1,2 @@
+Variant,Input,Strides,Final feature map,FP32 (%),W8 (%),W4 (%),W4 drop (pts),W4 + bias correction (%),W8 / A8 (%),W4 / A8 (%),Block-1 depthwise zero fraction at W4,Block-1 projection cumulative W4 SQNR (dB),Logit cumulative W4 SQNR (dB)
+Shared checkpoint (64x64),64x64,torchvision,2x2,89.82,89.87,17.58,72.24,77.22,89.67,17.62,0.3333333432674408,0.879771216264072,2.683476373969788
