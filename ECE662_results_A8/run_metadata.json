@@ -1,0 +1,12 @@
+{
+  "checkpoint": "/content/drive/MyDrive/ECE 662 Project/ECE662 Final Project/mobilenetv2_cifar10.pth",
+  "checkpoint_sha256": "2c7af937d4ae7d8a70b91279bf6c35027493914e88c510a9c4981246a32ae433",
+  "act_bits": 8,
+  "calibration_images": 1024,
+  "calibration_method": "minmax",
+  "calibration_source": "training split (first 45,000 of seed-42 permutation), subset seed 662",
+  "ranking_data": "validation split (last 5,000)",
+  "reported_accuracy": "full 10,000-image test set",
+  "torch": "2.14.1+cu130",
+  "torchvision": "0.29.1+cu130"
+}

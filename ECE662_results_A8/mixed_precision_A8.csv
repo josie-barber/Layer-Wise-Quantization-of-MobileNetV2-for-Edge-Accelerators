@@ -1,0 +1,10 @@
+config,k,selection,act_bits,test_accuracy,weight_payload_MB,gap_to_W8A8_pp,within_1pp,num_w8_layers
+W8A8,53,all,8,89.8,2.20256,0.0,True,53
+W4A8,0,sensitivity,8,17.65,1.10128,72.15,False,0
+k_1,1,sensitivity,8,26.78,1.101424,63.019999999999996,False,1
+k_3,3,sensitivity,8,58.64,1.102112,31.159999999999997,False,3
+k_5,5,sensitivity,8,63.65,1.103912,26.15,False,5
+k_10,10,sensitivity,8,79.97,1.161944,9.829999999999998,False,10
+k_20,20,sensitivity,8,85.55,1.448408,4.25,False,20
+k_30,30,sensitivity,8,88.2,1.64444,1.5999999999999943,False,30
+k_40,40,sensitivity,8,89.01,1.956472,0.789999999999992,True,40
