@@ -1,29 +1,33 @@
 config,source,k,n_layers_w8,n_layers_w4,weight_payload_MB,total_MB,accuracy_pct,accuracy_source,lilly_accuracy_pct,depthwise_mapping,accuracy_vs_W8A8_pp,within_1pp_of_W8A8,storage_vs_W8A8_pct
-W8A8,uniform,53.0,53,0,2.20256,2.339406,89.66,validated_here,,not_simulated,0.0,True,0.0
-k_10,lilly,10.0,10,43,1.161944,1.29879,79.98,validated_here,,not_simulated,-9.679999999999993,False,-44.482060830826285
-k_5,lilly,5.0,5,48,1.103912,1.240758,63.77,validated_here,,not_simulated,-25.889999999999993,False,-46.962690529134306
-k_3,lilly,3.0,3,50,1.102112,1.238958,58.91,validated_here,,not_simulated,-30.75,False,-47.03963313764263
-k_1,lilly,1.0,1,52,1.101424,1.23827,26.78,validated_here,,not_simulated,-62.879999999999995,False,-47.06904231245025
-W4A8,uniform,0.0,0,53,1.10128,1.238126,17.63,validated_here,,not_simulated,-72.03,False,-47.07519772113091
-Whole blocks + bias correction | Block 1 only,amanda,,2,51,1.10168,1.238526,80.89,amanda_reported,,not_simulated,-8.769999999999996,False,-47.058099363684626
-Whole blocks + bias correction | Blocks 0-1,amanda,,3,50,1.102112,1.238958,84.85,amanda_reported,,not_simulated,-4.810000000000002,False,-47.03963313764263
-Whole blocks + bias correction | Blocks 0-2,amanda,,6,47,1.104464,1.24131,86.16,amanda_reported,,not_simulated,-3.5,False,-46.93909479585844
-Whole blocks + bias correction | Blocks 0-3,amanda,,9,44,1.108568,1.245414,86.72,amanda_reported,,not_simulated,-2.9399999999999977,False,-46.76366564845947
-Whole blocks + bias correction | Blocks 0-4,amanda,,12,41,1.113248,1.250094,87.73,amanda_reported,,not_simulated,-1.9299999999999926,False,-46.563614866337865
-Whole blocks + bias correction | Blocks 0-5,amanda,,15,38,1.120256,1.257102,87.84,amanda_reported,,not_simulated,-1.8199999999999932,False,-46.26405164387884
-Whole blocks + bias correction | Blocks 0-7,amanda,,21,32,1.137344,1.27419,88.78,amanda_reported,,not_simulated,-0.8799999999999955,True,-45.53360981377323
-Top-k + bias correction | Top-30,amanda,,30,23,1.534232,1.671078,89.12,amanda_reported,,not_simulated,-0.539999999999992,True,-28.56827758841346
-Top-k | Top-34,amanda,,34,19,1.636472,1.773318,89.13,amanda_reported,,not_simulated,-0.5300000000000011,True,-24.197937425141248
-Top-k | Top-40,amanda,,40,13,1.651424,1.78827,89.18,amanda_reported,,not_simulated,-0.47999999999998977,True,-23.558800823798855
-Top-k | Top-42,amanda,,42,11,1.666304,1.80315,89.28,amanda_reported,,not_simulated,-0.37999999999999545,True,-22.922741926796796
-Top-k | Top-43,amanda,,43,10,1.743104,1.87995,89.47,amanda_reported,,not_simulated,-0.18999999999999773,True,-19.639857297108755
-Top-k | Top-45,amanda,,45,8,1.847552,1.984398,89.51,amanda_reported,,not_simulated,-0.14999999999999147,True,-15.175134200732998
-Top-k | Top-46,amanda,,46,7,1.8752,2.012046,89.55,amanda_reported,,not_simulated,-0.10999999999999943,True,-13.993295734045319
-Whole blocks | Block 1 only,amanda,,2,51,1.10168,1.238526,41.73,amanda_reported,,not_simulated,-47.93,False,-47.058099363684626
-Whole blocks | Blocks 0-1,amanda,,3,50,1.102112,1.238958,49.04,amanda_reported,,not_simulated,-40.62,False,-47.03963313764263
-Whole blocks | Blocks 1-2,amanda,,5,48,1.104032,1.240878,60.42,amanda_reported,,not_simulated,-29.239999999999995,False,-46.95756102190043
-Whole blocks | Blocks 0-2,amanda,,6,47,1.104464,1.24131,66.09,amanda_reported,,not_simulated,-23.569999999999993,False,-46.93909479585844
-Whole blocks | Blocks 0-3,amanda,,9,44,1.108568,1.245414,70.12,amanda_reported,,not_simulated,-19.539999999999992,False,-46.76366564845947
-Whole blocks | Blocks 0-4,amanda,,12,41,1.113248,1.250094,75.01,amanda_reported,,not_simulated,-14.649999999999991,False,-46.563614866337865
-Whole blocks | Blocks 0-5,amanda,,15,38,1.120256,1.257102,79.3,amanda_reported,,not_simulated,-10.36,False,-46.26405164387884
-Whole blocks | Blocks 0-7,amanda,,21,32,1.137344,1.27419,82.36,amanda_reported,,not_simulated,-7.299999999999997,False,-45.53360981377323
+W8A8,uniform,53.0,53,0,2.20256,2.339406,89.87,validated_here,89.8,not_simulated,0.0,True,0.0
+k_40,lilly,40.0,40,13,1.956472,2.093318,89.03,validated_here,89.01,not_simulated,-0.8400000000000034,True,-10.519251468107715
+k_30,lilly,30.0,30,23,1.64444,1.781286,88.19,validated_here,88.2,not_simulated,-1.6800000000000068,False,-23.857338144811113
+k_20,lilly,20.0,20,33,1.448408,1.585254,85.5,validated_here,85.55,not_simulated,-4.3700000000000045,False,-32.23690116208986
+k_10,lilly,10.0,10,43,1.161944,1.29879,80.01,validated_here,79.97,not_simulated,-9.86,False,-44.482060830826285
+k_5,lilly,5.0,5,48,1.103912,1.240758,63.66,validated_here,63.65,not_simulated,-26.210000000000008,False,-46.962690529134306
+k_3,lilly,3.0,3,50,1.102112,1.238958,58.88,validated_here,58.64,not_simulated,-30.990000000000002,False,-47.03963313764263
+k_1,lilly,1.0,1,52,1.101424,1.23827,26.63,validated_here,26.78,not_simulated,-63.24000000000001,False,-47.06904231245025
+W4A8,uniform,0.0,0,53,1.10128,1.238126,17.54,validated_here,17.65,not_simulated,-72.33000000000001,False,-47.07519772113091
+Uniform | W4 + bias correction,amanda,,0,53,1.10128,1.238126,77.06,amanda_reported,,not_simulated,-12.810000000000002,False,-47.07519772113091
+Whole blocks + bias correction | Block 1 only,amanda,,2,51,1.10168,1.238526,80.89,amanda_reported,,not_simulated,-8.980000000000004,False,-47.058099363684626
+Whole blocks + bias correction | Blocks 0-1,amanda,,3,50,1.102112,1.238958,84.85,amanda_reported,,not_simulated,-5.02000000000001,False,-47.03963313764263
+Whole blocks + bias correction | Blocks 0-2,amanda,,6,47,1.104464,1.24131,86.16,amanda_reported,,not_simulated,-3.710000000000008,False,-46.93909479585844
+Whole blocks + bias correction | Blocks 0-3,amanda,,9,44,1.108568,1.245414,86.72,amanda_reported,,not_simulated,-3.1500000000000057,False,-46.76366564845947
+Whole blocks + bias correction | Blocks 0-4,amanda,,12,41,1.113248,1.250094,87.73,amanda_reported,,not_simulated,-2.1400000000000006,False,-46.563614866337865
+Whole blocks + bias correction | Blocks 0-5,amanda,,15,38,1.120256,1.257102,87.84,amanda_reported,,not_simulated,-2.030000000000001,False,-46.26405164387884
+Whole blocks + bias correction | Blocks 0-7,amanda,,21,32,1.137344,1.27419,88.78,amanda_reported,,not_simulated,-1.0900000000000034,False,-45.53360981377323
+Top-k + bias correction | Top-30,amanda,,30,23,1.534232,1.671078,89.12,amanda_reported,,not_simulated,-0.75,True,-28.56827758841346
+Top-k | Top-34,amanda,,34,19,1.636472,1.773318,89.13,amanda_reported,,not_simulated,-0.7400000000000091,True,-24.197937425141248
+Top-k | Top-40,amanda,,40,13,1.651424,1.78827,89.18,amanda_reported,,not_simulated,-0.6899999999999977,True,-23.558800823798855
+Top-k | Top-42,amanda,,42,11,1.666304,1.80315,89.28,amanda_reported,,not_simulated,-0.5900000000000034,True,-22.922741926796796
+Top-k | Top-43,amanda,,43,10,1.743104,1.87995,89.47,amanda_reported,,not_simulated,-0.4000000000000057,True,-19.639857297108755
+Top-k | Top-45,amanda,,45,8,1.847552,1.984398,89.51,amanda_reported,,not_simulated,-0.35999999999999943,True,-15.175134200732998
+Top-k | Top-46,amanda,,46,7,1.8752,2.012046,89.55,amanda_reported,,not_simulated,-0.3200000000000074,True,-13.993295734045319
+Whole blocks | Block 1 only,amanda,,2,51,1.10168,1.238526,41.73,amanda_reported,,not_simulated,-48.14000000000001,False,-47.058099363684626
+Whole blocks | Blocks 0-1,amanda,,3,50,1.102112,1.238958,49.04,amanda_reported,,not_simulated,-40.830000000000005,False,-47.03963313764263
+Whole blocks | Blocks 1-2,amanda,,5,48,1.104032,1.240878,60.42,amanda_reported,,not_simulated,-29.450000000000003,False,-46.95756102190043
+Whole blocks | Blocks 0-2,amanda,,6,47,1.104464,1.24131,66.09,amanda_reported,,not_simulated,-23.78,False,-46.93909479585844
+Whole blocks | Blocks 0-3,amanda,,9,44,1.108568,1.245414,70.12,amanda_reported,,not_simulated,-19.75,False,-46.76366564845947
+Whole blocks | Blocks 0-4,amanda,,12,41,1.113248,1.250094,75.01,amanda_reported,,not_simulated,-14.86,False,-46.563614866337865
+Whole blocks | Blocks 0-5,amanda,,15,38,1.120256,1.257102,79.3,amanda_reported,,not_simulated,-10.570000000000007,False,-46.26405164387884
+Whole blocks | Blocks 0-7,amanda,,21,32,1.137344,1.27419,82.36,amanda_reported,,not_simulated,-7.510000000000005,False,-45.53360981377323
