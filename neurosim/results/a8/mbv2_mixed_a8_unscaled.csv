@@ -1,0 +1,67 @@
+source,config,layers_w8,depthwise_mapping,chip_area_mm2_est,latency_us,dynamic_energy_uJ,fps,a8_test_accuracy,act_encoding
+lilly,W8A8,53,depth1,80.27,116.57,6.961,8578.2,89.8,unscaled
+lilly,W4A8,0,depth1,47.03,111.36,3.924,8979.9,17.65,unscaled
+lilly,k_1,1,depth1,47.03,111.36,4.065,8979.9,26.78,unscaled
+lilly,k_3,3,depth1,47.53,111.36,4.235,8979.9,58.64,unscaled
+lilly,k_5,5,depth1,48.03,111.36,4.433,8979.9,63.65,unscaled
+lilly,k_10,10,depth1,49.04,111.36,4.68,8979.9,79.97,unscaled
+lilly,k_20,20,depth1,52.06,111.36,5.248,8979.9,85.55,unscaled
+lilly,k_30,30,depth1,55.59,116.57,5.975,8578.2,88.2,unscaled
+lilly,k_40,40,depth1,68.18,116.57,6.284,8578.2,89.01,unscaled
+amanda,Uniform | W4 + bias correction,0,depth1,47.03,111.36,3.924,8979.9,77.06,unscaled
+amanda,Whole blocks + bias correction | Block 1 only,2,depth1,47.03,111.36,4.128,8979.9,80.89,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-1,3,depth1,47.53,111.36,4.29,8979.9,84.85,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-2,6,depth1,48.54,116.57,4.897,8578.2,86.16,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-3,9,depth1,49.54,116.57,5.297,8578.2,86.72,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-4,12,depth1,50.55,116.57,5.529,8578.2,87.73,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-5,15,depth1,51.56,116.57,5.665,8578.2,87.84,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-7,21,depth1,53.57,116.57,5.885,8578.2,88.78,unscaled
+amanda,Top-k + bias correction | Top-30,30,depth1,55.09,116.57,6.108,8578.2,89.12,unscaled
+amanda,Top-k | Top-34,34,depth1,57.1,116.57,6.224,8578.2,89.13,unscaled
+amanda,Top-k | Top-40,40,depth1,62.64,116.57,6.408,8578.2,89.18,unscaled
+amanda,Top-k | Top-42,42,depth1,64.15,116.57,6.478,8578.2,89.28,unscaled
+amanda,Top-k | Top-43,43,depth1,66.17,116.57,6.522,8578.2,89.47,unscaled
+amanda,Top-k | Top-45,45,depth1,69.19,116.57,6.621,8578.2,89.51,unscaled
+amanda,Top-k | Top-46,46,depth1,70.2,116.57,6.678,8578.2,89.55,unscaled
+amanda,Uniform | W8,53,depth1,80.27,116.57,6.961,8578.2,89.67,unscaled
+amanda,Whole blocks | Block 1 only,2,depth1,47.03,111.36,4.128,8979.9,41.73,unscaled
+amanda,Whole blocks | Blocks 0-1,3,depth1,47.53,111.36,4.29,8979.9,49.04,unscaled
+amanda,Whole blocks | Blocks 1-2,5,depth1,48.03,116.57,4.735,8578.2,60.42,unscaled
+amanda,Whole blocks | Blocks 0-2,6,depth1,48.54,116.57,4.897,8578.2,66.09,unscaled
+amanda,Whole blocks | Blocks 0-3,9,depth1,49.54,116.57,5.297,8578.2,70.12,unscaled
+amanda,Whole blocks | Blocks 0-4,12,depth1,50.55,116.57,5.529,8578.2,75.01,unscaled
+amanda,Whole blocks | Blocks 0-5,15,depth1,51.56,116.57,5.665,8578.2,79.3,unscaled
+amanda,Whole blocks | Blocks 0-7,21,depth1,53.57,116.57,5.885,8578.2,82.36,unscaled
+lilly,W8A8,53,dense,250.12,195.8,46.849,5107.4,89.8,unscaled
+lilly,W4A8,0,dense,134.3,168.63,25.772,5930.2,17.65,unscaled
+lilly,k_1,1,dense,134.8,195.8,26.452,5107.4,26.78,unscaled
+lilly,k_3,3,dense,138.26,195.8,27.64,5107.4,58.64,unscaled
+lilly,k_5,5,dense,142.22,195.8,30.087,5107.4,63.65,unscaled
+lilly,k_10,10,dense,143.21,195.8,30.351,5107.4,79.97,unscaled
+lilly,k_20,20,dense,150.64,195.8,33.536,5107.4,85.55,unscaled
+lilly,k_30,30,dense,155.58,195.8,34.94,5107.4,88.2,unscaled
+lilly,k_40,40,dense,213.99,195.8,42.228,5107.4,89.01,unscaled
+amanda,Uniform | W4 + bias correction,0,dense,134.3,168.63,25.772,5930.2,77.06,unscaled
+amanda,Whole blocks + bias correction | Block 1 only,2,dense,134.8,195.8,26.523,5107.4,80.89,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-1,3,dense,135.29,195.8,26.697,5107.4,84.85,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-2,6,dense,139.25,195.8,28.349,5107.4,86.16,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-3,9,dense,143.71,195.8,31.011,5107.4,86.72,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-4,12,dense,148.16,195.8,31.769,5107.4,87.73,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-5,15,dense,150.64,195.8,32.926,5107.4,87.84,unscaled
+amanda,Whole blocks + bias correction | Blocks 0-7,21,dense,155.58,195.8,34.336,5107.4,88.78,unscaled
+amanda,Top-k + bias correction | Top-30,30,dense,156.57,195.8,35.775,5107.4,89.12,unscaled
+amanda,Top-k | Top-34,34,dense,160.04,195.8,36.114,5107.4,89.13,unscaled
+amanda,Top-k | Top-40,40,dense,196.17,195.8,41.263,5107.4,89.18,unscaled
+amanda,Top-k | Top-42,42,dense,202.6,195.8,43.412,5107.4,89.28,unscaled
+amanda,Top-k | Top-43,43,dense,204.58,195.8,43.457,5107.4,89.47,unscaled
+amanda,Top-k | Top-45,45,dense,207.55,195.8,43.56,5107.4,89.51,unscaled
+amanda,Top-k | Top-46,46,dense,208.54,195.8,43.619,5107.4,89.55,unscaled
+amanda,Uniform | W8,53,dense,250.12,195.8,46.849,5107.4,89.67,unscaled
+amanda,Whole blocks | Block 1 only,2,dense,134.8,195.8,26.523,5107.4,41.73,unscaled
+amanda,Whole blocks | Blocks 0-1,3,dense,135.29,195.8,26.697,5107.4,49.04,unscaled
+amanda,Whole blocks | Blocks 1-2,5,dense,138.76,195.8,28.175,5107.4,60.42,unscaled
+amanda,Whole blocks | Blocks 0-2,6,dense,139.25,195.8,28.349,5107.4,66.09,unscaled
+amanda,Whole blocks | Blocks 0-3,9,dense,143.71,195.8,31.011,5107.4,70.12,unscaled
+amanda,Whole blocks | Blocks 0-4,12,dense,148.16,195.8,31.769,5107.4,75.01,unscaled
+amanda,Whole blocks | Blocks 0-5,15,dense,150.64,195.8,32.926,5107.4,79.3,unscaled
+amanda,Whole blocks | Blocks 0-7,21,dense,155.58,195.8,34.336,5107.4,82.36,unscaled
