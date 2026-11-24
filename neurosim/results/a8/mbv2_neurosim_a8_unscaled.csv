@@ -1,0 +1,5 @@
+config,weight_bits,act_bits,depthwise_mapping,chip_area_mm2,latency_us,dynamic_energy_uJ,fps,act_encoding
+W8A8,8,8,depth1,80.272,116.574,6.961,8578.2,unscaled
+W8A8,8,8,dense,250.115,195.796,46.849,5107.4,unscaled
+W4A8,4,8,depth1,47.026,111.360,3.924,8979.9,unscaled
+W4A8,4,8,dense,134.303,168.627,25.772,5930.3,unscaled
