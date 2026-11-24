@@ -1,0 +1,7 @@
+Configuration,Test accuracy (%),Weight payload (MB)
+FP32 (W32A32),89.82,8.81024
+W8A32 (midterm W8),89.87,2.20256
+W4A32 (midterm W4),17.58,1.10128
+W32A8 (activation-only error),89.9,8.81024
+W8A8,89.8,2.20256
+W4A8,17.65,1.10128

@@ -1,3 +1,6 @@
+import csv
+CAL=sorted(csv.DictReader(open('/home/dkb31/team-repo/ECE662_results_A8/layer_info_and_activation_calibration.csv')),key=lambda r:int(r['order']))
+CAL_I=[0]
 #from modules.quantize import quantize, quantize_grad, QConv2d, QLinear, RangeBN
 import os
 import torch.nn as nn
@@ -33,6 +36,12 @@ def Neural_Sim(self, input, output):
     depthwise = getattr(self, 'groups', 1) > 1
 
     print("quantize layer ", self.name)
+    x=input[0].cpu().data.numpy()
+    r=CAL[CAL_I[0]];CAL_I[0]+=1
+    m=max(abs(float(r['act_min'])),abs(float(r['act_max'])))
+    ok=int(r['weight_count'])==self.weight.numel()
+    print("  calib:",r['layer'],r['type'],"max",round(m,3),"OK" if ok else "MISMATCH")
+    x=x/m  # scale into [-1,1] for dec2bin
     input_file_name =  './layer_record_' + str(model_n) + '/input' + str(self.name) + '.csv'
     weight_file_name =  './layer_record_' + str(model_n) + '/weight' + str(self.name) + '.csv'
     f = open('./layer_record_' + str(model_n) + '/trace_command.sh', "a")
@@ -50,12 +59,12 @@ def Neural_Sim(self, input, output):
         k=self.weight.shape[-1]
         padding = self.padding
         stride = self.stride
-        stretched = stretch_input(input[0].cpu().data.numpy(),k,padding,stride)
+        stretched = stretch_input(x,k,padding,stride)
         if depthwise and dw_map == 'depth1':
             stretched = depth1_input(stretched, self.in_channels, k)
         write_matrix_activation_conv(stretched,None,self.wl_input,input_file_name)
     else:
-        write_matrix_activation_fc(input[0].cpu().data.numpy(),None ,self.wl_input, input_file_name)
+        write_matrix_activation_fc(x,None ,self.wl_input, input_file_name)
 
 def write_matrix_weight(input_matrix,filename):
     cout = input_matrix.shape[0]
