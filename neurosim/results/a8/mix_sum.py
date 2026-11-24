@@ -6,7 +6,7 @@
 import re,json,csv,os
 
 R='neurosim/results/a8'
-TAG='unscaled'  # change to 'scaled' after the dec2bin fix
+TAG='scaled'
 LILLY='ECE662_results_A8/mixed_precision_configs.json'
 LILLY_ACC='ECE662_results_A8/mixed_precision_A8.csv'
 AMANDA='results/amanda_neurosim_configs.json'
